@@ -50,8 +50,12 @@ make -C web/js common.js
 
 ### Run a python command on the `backend` system
 ```
-export UID && docker-compose run backend python my-python-script.py
+export UID && docker-compose run backend python move-files.py
 ```
+
+This will upload all the audio files to commons and link to the relevant wiktionary page.
+
+
 
 ## Hard dependencies
 
