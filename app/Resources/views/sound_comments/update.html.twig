@@ -3,8 +3,8 @@
 {% block body %}
 	{{ form_start(form) }}
 	<table class="nice">
-		<tr><th>Visibilité</th><td>{{ form_widget(form.visibility) }} Visible par tous</td></tr>
-		<tr><th>Texte</th><td>{{ form_widget(form.text) }}</td></tr>
+		<tr><th>Visibility</th><td>{{ form_widget(form.visibility) }} Visible to all</td></tr>
+		<tr><th>Text</th><td>{{ form_widget(form.text) }}</td></tr>
 		<tr><th colspan="2">{{ form_widget(form.save) }}</th></tr>
 	</table>
 	{{ form_end(form) }}

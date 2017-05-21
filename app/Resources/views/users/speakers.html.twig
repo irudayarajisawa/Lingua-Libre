@@ -6,7 +6,7 @@
 	{% if speakers|length > 0 %}
 
 		<table class="nice">
-			<tr><th>Nom</th><th>Sexe</th><th>Habitation</th></tr>
+			<tr><th>Name</th><th>Sexe</th><th>Habitation</th></tr>
 			{% for speaker in speakers %}
 			<tr>
 				<td><a href="{{ path("speakersShow", {"id": speaker.getId() }) }}">{{ speaker.getName() }}</a></td>
@@ -18,8 +18,8 @@
 			{% if user.editableBy(auth) %}<tr><th><a href="{{ path("usersAddSpeaker", {"id": user.getId() }) }}"><img src="{{ asset("img/add_24.png") }}" title="Ajouter"/></a></th></tr>{% endif %}
 		</table>
 	{% else %}
-		<p>Pas de locuteur défini pour le moment.</p>
-		{% if user.editableBy(auth) %}<p><a class="lienpart" href="{{ path("usersAddSpeaker", {"id": user.getId() }) }}">En définir un</a></p>{% endif %}
+		<p>No speaker defined at the moment.</p>
+		{% if user.editableBy(auth) %}<p><a class="lienpart" href="{{ path("usersAddSpeaker", {"id": user.getId() }) }}">To define one</a></p>{% endif %}
 		
 	{% endif %}
 

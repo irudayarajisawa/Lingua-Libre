@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<h1>Supprimer langue</h1>
+	<h1>Remove langue</h1>
 	
-	<p>Êtes-vous sûr de vouloir supprimer la langue « {{ language.getTitle()|capitalize }} » ?</p>
+	<p>Are you sure you want to delete the language  « {{ language.getTitle()|capitalize }} » ?</p>
 
 	{{ form_start(form) }}
 	<table>
-		<tr><td>{{ form_widget(form.save) }} <a href="{{ path("languagesShow", {"id": language.getId() }) }}">Annuler</a></td></tr>
+		<tr><td>{{ form_widget(form.save) }} <a href="{{ path("languagesShow", {"id": language.getId() }) }}">Cancel</a></td></tr>
 	</table>
 	{{ form_end(form) }}
 

@@ -19,7 +19,7 @@
 {% endblock %}
 
 {% block body %}
-	<h1>{% if auth and auth.getId() == user.getId() %}Mes enregistrements{% else %}Enregistrements de « {{ user.getUsername()|capitalize }} »{% endif %}</h1>
+	<h1>{% if auth and auth.getId() == user.getId() %}My Records{% else %}Recordings of « {{ user.getUsername()|capitalize }} »{% endif %}</h1>
 	<div id="container"></div>
 {% endblock %}
 

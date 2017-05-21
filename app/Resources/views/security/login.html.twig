@@ -3,7 +3,7 @@
 {% block body %}
 
 	{% if error %}
-		<div>Login ou mot de passe incorrect !</div>
+		<div>Incorrect Username or password !</div>
 	{% endif %}
 
 	<form method="post" class="login">
@@ -17,10 +17,10 @@
 				<td><input type="password" id="password" name="_password" /></td>
 			</tr>
 			<tr>
-				<th colspan="2"><button type="submit">Se connecter</button></th>
+				<th colspan="2"><button type="submit">Submi
 			</tr>
 		</table>
 	</form>
-	<a href="{{ path("usersAdd") }}">S’inscrire</a>
+	<a href="{{ path("usersAdd") }}">Register</a>
 
 {% endblock %}

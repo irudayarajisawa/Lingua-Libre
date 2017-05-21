@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<h1>Éditer langue :</h1>
+	<h1>Édit Language :</h1>
 
 	{{ form_start(form) }}
 	<table class="nice">
-		<tr><th>Titre</th><td>{{ form_widget(form.title) }}</td></tr>
+		<tr><th>Title</th><td>{{ form_widget(form.title) }}</td></tr>
 		<tr><th>Code</th><td>{{ form_widget(form.code) }}</td></tr>
 		<tr><th>Description</th><td>{{ form_widget(form.description) }}</td></tr>
 		<tr><th colspan="2">{{ form_widget(form.save) }}</th></tr>

@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<h1>Utilisateurs</h1>
+	<h1>users</h1>
 
 
 	<table class="nice">
@@ -11,7 +11,7 @@
 			<td><a href="{{ path("usersShow", {"id": user.getId() }) }}">{{ user.getUsername()|capitalize }}</a></td>
 			<td>{{ user.getEmail() }}</td>
 			<td>{{ user.getCreated()|date("d/m/Y")}}</td>
-			<td>{% if user.getIsAdmin() %}Oui{% else %}Non{% endif %}</td>
+			<td>{% if user.getIsAdmin() %}Yes{% else %}No{% endif %}</td>
 			{% if user.editableBy(auth) %}<th><a href="{{ path("usersUpdate", {"id": user.getId() }) }}"><img src="{{ asset("img/edit_24.png") }}" title="Modifier"/></a></th>{% endif %}
 		</tr>
 		{% endfor %}
