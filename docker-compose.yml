@@ -25,3 +25,11 @@ database:
     - MYSQL_DATABASE=lingualibre
   ports:
     - "3306"
+
+backend:
+  build: ./docker/backend
+  volumes:
+      - ./backend-code:/usr/src/app
+  links:
+    - database
+  user: "${UID}"

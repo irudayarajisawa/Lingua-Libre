@@ -48,6 +48,11 @@ docker-compose exec app /code/bin/console doctrine:fixtures:load
 make -C web/js common.js
 ```
 
+### Run a python command on the `backend` system
+```
+export UID && docker-compose run backend python my-python-script.py
+```
+
 ## Hard dependencies
 
 The following dependencies exist in the code and are yet to be addressed in the development environment or, 
