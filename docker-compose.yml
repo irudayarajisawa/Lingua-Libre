@@ -30,6 +30,7 @@ backend:
   build: ./docker/backend
   volumes:
       - ./backend-code:/usr/src/app
+      - ./web/audio:/audio
   links:
     - database
   user: "${UID}"
