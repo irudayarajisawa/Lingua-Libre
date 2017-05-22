@@ -52,8 +52,8 @@ logger.info("Trying to login to commons ")
 
 
 wiki_url = "https://commons.wikimedia.org/w/api.php"
-wiki_username = "Tshrinivasan"
-wiki_password = "Vanakkam@1"
+wiki_username = "USERNAME"
+wiki_password = "PASSWORD"
 
 logger.info("Wiki URL = " + wiki_url)
 
